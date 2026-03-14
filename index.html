@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ion - Watch Your Food Cook Live</title>
+  <meta name="description" content="Ion App - Watch Your Food Cook Live. Order from verified kitchens with live camera access." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="ion-styles.css" />
+</head>
+<body>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <img
+      src="images/h.png"
+      alt="Delicious food spread"
+      class="hero__bg"
+    />
+    <div class="hero__overlay"></div>
+
+    <!-- Nav -->
+    <nav class="hero__nav">
+      <div class="hero__logo">
+        <div class="hero__logo-icon">I</div>
+        <span class="hero__logo-text">Ion</span>
+      </div>
+      <div class="hero__nav-actions">
+        <button class="btn-text">Sign In</button>
+        <button class="btn-glass">Get App</button>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="hero__content">
+      <div class="hero__location-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFB800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Delivering to your area</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+
+      <h1 class="hero__title">
+        Watch Your Food<br />
+        <span class="hero__title-accent">Cook Live</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Order from verified kitchens. See your meal prepared in real-time through live cameras.
+      </p>
+
+      <div class="hero__cta-row">
+        <button class="btn-primary btn-primary--large">
+          Order Food
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="btn-outline-hero">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          25 min avg
+        </button>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB800" stroke="#FFB800" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <strong>4.9</strong>
+          <span class="hero__stat-sub">(12k+ reviews)</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <span class="hero__stat-text">500+ Verified Kitchens</span>
+        <div class="hero__stat-divider"></div>
+        <span class="hero__stat-text">1M+ Orders</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED DISHES ========== -->
+  <section class="section featured-dishes">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label">
+            <div class="section-label__bar"></div>
+            <span class="section-label__text">Curated for you</span>
+          </div>
+          <h2 class="section-title">Featured Dishes</h2>
+        </div>
+        <a href="#" class="link-red desktop-only">View All →</a>
+      </div>
+
+      <div class="dishes-grid" id="dishesGrid">
+        <!-- Dish Card 1 -->
+        <div class="dish-card">
+          <div class="dish-card__image-wrap">
+            <img src="images/bur.png" alt="Smash Burger Deluxe" class="dish-card__image" />
+            <span class="dish-card__tag dish-card__tag--red">Bestseller</span>
+            <button class="dish-card__fav">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__info">
+              <div>
+                <h3 class="dish-card__name">Smash Burger Deluxe</h3>
+                <p class="dish-card__restaurant">Burger Lab</p>
+              </div>
+              <div class="dish-card__rating">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#16a34a" stroke="#16a34a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="dish-card__footer">
+              <div class="dish-card__meta">
+                <span class="dish-card__price">$12.99</span>
+                <span class="dish-card__time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  20 min
+                </span>
+              </div>
+              <button class="btn-add">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 2 -->
+        <div class="dish-card">
+          <div class="dish-card__image-wrap">
+            <img src="images/piz.png" alt="Margherita Wood-Fired" class="dish-card__image" />
+            <span class="dish-card__tag dish-card__tag--orange">New</span>
+            <button class="dish-card__fav">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__info">
+              <div>
+                <h3 class="dish-card__name">Margherita Wood-Fired</h3>
+                <p class="dish-card__restaurant">Pizza Napoli</p>
+              </div>
+              <div class="dish-card__rating">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#16a34a" stroke="#16a34a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.9</span>
+              </div>
+            </div>
+            <div class="dish-card__footer">
+              <div class="dish-card__meta">
+                <span class="dish-card__price">$14.50</span>
+                <span class="dish-card__time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  25 min
+                </span>
+              </div>
+              <button class="btn-add">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish Card 3 -->
+        <div class="dish-card">
+          <div class="dish-card__image-wrap">
+            <img src="images/sus.png" alt="Premium Sushi Platter" class="dish-card__image" />
+            <span class="dish-card__tag dish-card__tag--yellow">Premium</span>
+            <button class="dish-card__fav">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__info">
+              <div>
+                <h3 class="dish-card__name">Premium Sushi Platter</h3>
+                <p class="dish-card__restaurant">Sakura Kitchen</p>
+              </div>
+              <div class="dish-card__rating">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#16a34a" stroke="#16a34a" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.9</span>
+              </div>
+            </div>
+            <div class="dish-card__footer">
+              <div class="dish-card__meta">
+                <span class="dish-card__price">$22.00</span>
+                <span class="dish-card__time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  30 min
+                </span>
+              </div>
+              <button class="btn-add">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="link-red mobile-only" style="margin-top:16px;display:block;">View All →</a>
+    </div>
+  </section>
+
+  <!-- ========== LIVE KITCHEN ========== -->
+  <section class="section live-kitchen">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <div class="ion-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Ion Verified</span>
+        </div>
+        <h2 class="section-title">See Your Kitchen Live</h2>
+        <p class="section-subtitle">Every Ion partner kitchen has live cameras. Watch your food being prepared in real-time.</p>
+      </div>
+
+      <div class="live-camera">
+        <img
+          src="images/kl.png"
+          alt="Live kitchen camera"
+          class="live-camera__bg"
+        />
+        <div class="live-camera__overlay">
+          <!-- Top Bar -->
+          <div class="live-camera__top">
+            <div class="live-camera__top-left">
+              <div class="live-indicator">
+                <div class="live-indicator__dot"></div>
+                <span>LIVE</span>
+              </div>
+              <div class="live-viewers">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <span>2.4k watching</span>
+              </div>
+            </div>
+            <div class="live-camera__top-right">
+              <div class="live-hd">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                <span>HD</span>
+              </div>
+              <button class="live-camera__btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Timestamp -->
+          <div class="live-camera__timestamp">
+            <span id="liveTimestamp">12:34:56 PM</span> — CAM 02
+          </div>
+
+          <!-- Grid Lines -->
+          <div class="live-camera__grid">
+            <div class="live-camera__grid-v1"></div>
+            <div class="live-camera__grid-v2"></div>
+            <div class="live-camera__grid-h1"></div>
+            <div class="live-camera__grid-h2"></div>
+          </div>
+
+          <!-- Bottom Bar -->
+          <div class="live-camera__bottom">
+            <div class="live-camera__bottom-info">
+              <div class="live-camera__kitchen-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <strong class="live-camera__kitchen-name">Burger Lab Kitchen</strong>
+                <p class="live-camera__kitchen-cam">Camera 2 — Grill Station</p>
+              </div>
+            </div>
+            <button class="btn-primary btn-primary--small">Watch Full Screen</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Verified Clean</h3>
+          <p class="feature-card__desc">Health inspected & certified</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3 class="feature-card__title">24/7 Cameras</h3>
+          <p class="feature-card__desc">Always-on live streaming</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="feature-card__title">Full Transparency</h3>
+          <p class="feature-card__desc">See every step of prep</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEAL SUBSCRIPTIONS ========== -->
+  <section class="section subscriptions">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <div class="ion-badge ion-badge--orange">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813h6.124l-4.962 3.587 1.912 5.813L12 14.626l-4.986 3.587 1.912-5.813L3.964 8.813h6.124z"/></svg>
+          <span>Save More</span>
+        </div>
+        <h2 class="section-title">Meal Subscriptions</h2>
+        <p class="section-subtitle">Subscribe and save up to 40%. Fresh meals delivered to your door every day.</p>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Starter -->
+        <div class="plan-card">
+          <div class="plan-card__header">
+            <div class="plan-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <span class="plan-card__name">Starter</span>
+          </div>
+          <div class="plan-card__price">
+            <span class="plan-card__amount">$49</span>
+            <span class="plan-card__period">/week</span>
+          </div>
+          <p class="plan-card__desc">5 meals per week</p>
+          <ul class="plan-card__features">
+            <li><span class="check-icon">✓</span> Choose from 20+ dishes</li>
+            <li><span class="check-icon">✓</span> Free delivery</li>
+            <li><span class="check-icon">✓</span> Skip anytime</li>
+            <li><span class="check-icon">✓</span> Live kitchen access</li>
+          </ul>
+          <button class="btn-dark">Subscribe Now</button>
+        </div>
+
+        <!-- Popular (Featured) -->
+        <div class="plan-card plan-card--featured">
+          <div class="plan-card__badge">Most Popular</div>
+          <div class="plan-card__header">
+            <div class="plan-card__icon plan-card__icon--white">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg>
+            </div>
+            <span class="plan-card__name">Popular</span>
+          </div>
+          <div class="plan-card__price">
+            <span class="plan-card__amount">$89</span>
+            <span class="plan-card__period">/week</span>
+          </div>
+          <p class="plan-card__desc">10 meals per week</p>
+          <ul class="plan-card__features">
+            <li><span class="check-icon check-icon--white">✓</span> Choose from 50+ dishes</li>
+            <li><span class="check-icon check-icon--white">✓</span> Priority delivery</li>
+            <li><span class="check-icon check-icon--white">✓</span> Skip anytime</li>
+            <li><span class="check-icon check-icon--white">✓</span> Live kitchen access</li>
+            <li><span class="check-icon check-icon--white">✓</span> Exclusive chef specials</li>
+          </ul>
+          <button class="btn-white">Subscribe Now</button>
+        </div>
+
+        <!-- Premium -->
+        <div class="plan-card plan-card--premium">
+          <div class="plan-card__header">
+            <div class="plan-card__icon plan-card__icon--gold">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813h6.124l-4.962 3.587 1.912 5.813L12 14.626l-4.986 3.587 1.912-5.813L3.964 8.813h6.124z"/></svg>
+            </div>
+            <span class="plan-card__name">Premium</span>
+          </div>
+          <div class="plan-card__price">
+            <span class="plan-card__amount">$129</span>
+            <span class="plan-card__period">/week</span>
+          </div>
+          <p class="plan-card__desc">Unlimited meals</p>
+          <ul class="plan-card__features">
+            <li><span class="check-icon">✓</span> Unlimited dish selection</li>
+            <li><span class="check-icon">✓</span> Express 15-min delivery</li>
+            <li><span class="check-icon">✓</span> Skip anytime</li>
+            <li><span class="check-icon">✓</span> VIP kitchen tours</li>
+            <li><span class="check-icon">✓</span> Personal chef requests</li>
+          </ul>
+          <button class="btn-dark">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POPULAR MEALS ========== -->
+  <section class="section popular-meals">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label section-label--orange">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            <span>Trending Now</span>
+          </div>
+          <h2 class="section-title">Popular Meals</h2>
+        </div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="category-filters" id="categoryFilters">
+        <button class="category-btn category-btn--active" data-category="All">All</button>
+        <button class="category-btn" data-category="Burgers">Burgers</button>
+        <button class="category-btn" data-category="Pizza">Pizza</button>
+        <button class="category-btn" data-category="Sushi">Sushi</button>
+        <button class="category-btn" data-category="Bowls">Bowls</button>
+        <button class="category-btn" data-category="Desserts">Desserts</button>
+      </div>
+
+      <!-- Meals Grid -->
+      <div class="meals-grid" id="mealsGrid">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="text-center" style="margin-top:32px;">
+        <button class="btn-outline">Load More Meals</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="hero__logo" style="margin-bottom:16px;">
+            <div class="hero__logo-icon">I</div>
+            <span class="hero__logo-text">Ion</span>
+          </div>
+          <p class="footer__desc">Watch your food cook live. Order from verified kitchens with full transparency.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>For Restaurants</h4>
+          <ul>
+            <li><a href="#">Partner with us</a></li>
+            <li><a href="#">Get Verified</a></li>
+            <li><a href="#">Kitchen Setup</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              San Francisco, CA
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              1-800-ION-FOOD
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="721a171e1e1d321b1d1c1302025c111d1f">[email&#160;protected]</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Ion. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="ion-script.js"></script>
+</body>
+</html>
