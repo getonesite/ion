@@ -3,55 +3,55 @@ const mealsData = [
   {
     id: 1,
     name: "Classic Smash Burger",
-    price: "$10.99",
+    price: "Rs 109",
     rating: 4.8,
     orders: "2.1k",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1010489/2026-03-08/0bf82c6d-d4e9-42ab-ada8-20b1b020b57b.png",
+    image: "images/bur.png",
     category: "Burgers"
   },
   {
     id: 2,
     name: "Pepperoni Pizza",
-    price: "$13.50",
+    price: "Rs 135",
     rating: 4.7,
     orders: "1.8k",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1010489/2026-03-08/a89ca1f8-929b-4093-b2e8-41a1c425de95.png",
+    image: "images/piz.png",
     category: "Pizza"
   },
   {
     id: 3,
     name: "Salmon Poke Bowl",
-    price: "$15.00",
+    price: "Rs 150",
     rating: 4.9,
     orders: "1.5k",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1010489/2026-03-08/24ba585a-f3e6-4421-8b43-322c1123efdd.png",
+    image: "images/sus.png",
     category: "Bowls"
   },
   {
     id: 4,
     name: "Dragon Roll Set",
-    price: "$18.99",
+    price: "Rs 199",
     rating: 4.8,
     orders: "1.2k",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1010489/2026-03-08/60a0afe3-c451-4a57-b152-6f15f92232f6.png",
+    image: "images/piz.png",
     category: "Sushi"
   },
   {
     id: 5,
     name: "BBQ Bacon Burger",
-    price: "$12.50",
+    price: "Rs 120",
     rating: 4.6,
     orders: "980",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1010489/2026-03-08/0bf82c6d-d4e9-42ab-ada8-20b1b020b57b.png",
+    image: "images/bur.png",
     category: "Burgers"
   },
   {
     id: 6,
     name: "Veggie Power Bowl",
-    price: "$11.00",
+    price: "Rs 100",
     rating: 4.7,
     orders: "870",
-    image: "https://mgx-backend-cdn.metadl.com/generate/images/1010489/2026-03-08/24ba585a-f3e6-4421-8b43-322c1123efdd.png",
+    image: "images/sus.png",
     category: "Bowls"
   }
 ];
